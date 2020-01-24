@@ -1,0 +1,15 @@
+tests\BaseTest.class
+tests\SaveAccountData.class
+tests\EdittingFormTest.class
+tests\CountOfAllForms.class
+pageObject\SearchAllPage.class
+pageObject\ViewMyFormsPage.class
+pageObject\LoginPage.class
+tests\LoginAndSearchTest.class
+tests\LoginTest.class
+tests\LoginTest2.class
+tests\ForgotPasswordTest.class
+pageObject\AccountPage.class
+pageObject\FormEdittingPage.class
+pageObject\ForgotPasswordPage.class
+pageObject\BasePage.class
