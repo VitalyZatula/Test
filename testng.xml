@@ -6,7 +6,6 @@
       <class name="tests.LoginTest"/>
       <class name="tests.ForgotPasswordTest"/>
       <class name="tests.SaveAccountData"/>
-      Vitaly
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
