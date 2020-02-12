@@ -9,6 +9,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -18,14 +19,15 @@ public class BaseTest {
 	WebDriver driver;
 
 	@BeforeClass
-	public void setup() {
+	public void setup(ITestContext testContext) {
 	//	System.setProperty("webdriver.chrome.driver","C:\\Users\\Vitaly\\Desktop\\Automation\\Drivers\\chromedriver.exe");
 		driver= new ChromeDriver();
+		testContext.setAttribute("WebDriver", this.driver);
 		driver.get("https://events.eply.com/login/index.aspx");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
-
+/*
 	@AfterMethod
 	public void failedTest(ITestResult result) throws InterruptedException {
 		//check if test failed
@@ -41,19 +43,13 @@ public class BaseTest {
 		}
 	}
 
-
+*/
 
 
 	@AfterClass
 	public void teardown() {
 		driver.quit();
 	}
-
-
-
-
-
-
 }
 
 

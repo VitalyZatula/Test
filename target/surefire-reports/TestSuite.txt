@@ -1,31 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 3, Errors: 0, Skipped: 1, Time elapsed: 90.484 s <<< FAILURE! - in TestSuite
-tests.LoginTest.setup  Time elapsed: 25.755 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:45192
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-6AT53SA', ip: '192.168.0.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: driver.version: RemoteWebDriver
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:45192
-Caused by: java.net.ConnectException: Connection refused: connect
-
-tests.LoginTest.loginFailure  Time elapsed: 26.117 s  <<< FAILURE!
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 84.32 s <<< FAILURE! - in TestSuite
+tests.LoginTest.loginFailure  Time elapsed: 22.701 s  <<< FAILURE!
 org.testng.TestNGException: 
 
 Method public void tests.LoginTest.loginFailure(java.lang.String,java.lang.String) requires a @DataProvider named : getDataFromexcell
-
-tests.ForgotPasswordTest.enterForgotPass  Time elapsed: 14.585 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"#body_Message"}
-  (Session info: chrome=79.0.3945.117)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-6AT53SA', ip: '192.168.0.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Vitaly\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60162}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b211476587c916dc569982b676e6fb5d
-*** Element info: {Using=css selector, value=#body_Message}
-	at tests.ForgotPasswordTest.enterForgotPass(ForgotPasswordTest.java:29)
 
